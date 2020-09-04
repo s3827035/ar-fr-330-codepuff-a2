@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Flamenco&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', serif;
+    background: #247B7B;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding-top: 25px;
+    background: #247B7B;
+}
+
+#branding {
+    font-size: 90%;
+    color: white;
+}
+
+.brand {
+    display: block;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Asap', serif;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc;
+}
+
+.brand a {
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 280%;
+    background: #247B7B;
+    text-decoration: none;
+    font-family: 'Flamenco', serif;
+    font-weight: bold;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: #E9E9E9;
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Flamenco', serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+nav a:not(:first-child) {
+}
+
+nav a:not(:last-child):after {
+    content: "-";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.brand a:hover, nav a:hover {
+    color: white;
+    transition: color 500ms;
+}
+
+#page-wrapper {
+    margin: 0 5% 2.50% 5%;
+    padding: 0 30px 15px 30px;
+    min-height: 50vh;
+}
+
+.container {
+    padding: 20px 45px 20px 45px;
+    background: #FFFFFA;
+    margin-top: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+    color: #44A1A0;
+}
+
+h2 {
+    font-size: 150%;
+    margin: 0;
+}
+
+.text-center {
+    display: block;
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+p, li {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.team-member {
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+
+.grid-2 {
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.team-member img {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+.author-info-description {
+    display: inline-block;
+    padding: 0 0 0 10px;
+}
+
+.justified-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.col-4 {
+    display: inline-table;
+    width: 30%;
+    padding-right: 20px;
+}
+
+.col-4:last-child {
+    padding-right: 0;
+}
+
+.topic {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    color: #383b38;
+    font-family: 'Flamenco', serif;
+}
+
+.sub-topic {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: #383b38;
+    padding-top: 15px;
+    font-family: 'Flamenco', serif;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .team-member img {
+        display: block;
+        height: 150px;
+        width: 150px;
+        margin: 0;
+    }
+
+    .author-info-description {
+        display: block;
+        padding: 10px 0;
+        width: calc(100%);
+    }
+
+}
