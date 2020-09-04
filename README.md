@@ -11,4 +11,4 @@
 
 # Live
 
-The assignment is live at http://ar-fr-330-codepuff.s3.amazonaws.com/index.html
+The assignment is live at http://ar-fr-330-codepuff-a2.s3.amazonaws.com/index.html
