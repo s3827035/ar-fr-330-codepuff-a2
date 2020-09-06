@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Technologies & Architecture - Passfree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CodePuff">
+    <meta name="description" content="Assignment Part 2">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="brand">
+        <a href="index.html"><img src="assets/img/froggy.png" height="100" width="100" alt="Froggy Mascot Logo"></a>
+        <br>
+        <span id="branding">Passfree</span>
+    </div>
+
+    <nav>
+        <a href="mvf1.html">MVF 1</a>
+        <a href="mvf2.html">MVF 2</a>
+        <a href="mvf3.html">MVF 3</a>
+        <a href="mvf4.html">MVF 4</a>
+        <a href="mvf5.html">MVF 5</a>
+        <a href="estimation-plan.html">Estimation Plan</a>
+        <a href="technologies-architecture.html">Technologies &amp; Architecture</a>
+    </nav>
+
+</header>
+
+<div id="page-wrapper">
+
+    <div class="container">
+
+        <h1 class="text-center">Technologies and Architecture</h1>
+
+        <h2>CloudFlare - CDN, DNS & Proxy Server</h2>
+        <p>CloudFlare is an American company that offers a reverse proxy solution which can be used to speed up your website by using its content delivery network and protect it against hacks, SQL injections. In addition to that, it also offers attractive features such as free SSL certificate, DoS protection, load balancing and more. We are using CloudFlare at Passfree to manage our DNS records and use their SSL certificate(s).</p>
+
+        <h2>Nginx - Web Server</h2>
+        <p>Nginx is an event-based web-server known for its stability and high performance. It is used to serve web content such as HTML and is often used in pair with PHP to serve dynamic content. We'll be using <em>Nginx</em> at Passfree to serve our web-application to the users. Every request is first processed by Nginx and then sent to PHP for processing and then sent back to the user.</p>
+
+        <h2>Izaro - MVC Framework</h2>
+        <p>Model-View-Controller (MVC) is an architectural design used in programming web-applications to separate the business logic and presentation layer from each other. It is used to separate the HTML content (view) with data processing unit (model) and the link between the view and models (controller). MVC enables modularity, clean and extensible code. At <em>Passfree</em>, we are using a small MVC framework called Izaro to build our application. Some of its features include template engine, automatic URL routing, support for authentication, etc. We have decided to take Izaro over Laravel in this case for its simplicity and friendliness with beginners.</p>
+
+        <h2>MySQL - Database Server</h2>
+        <p>MySQL is an opensource RDBMS software based on the SQL language. Owing to its high performance and ease of use, MySQL is now a widely used database server that is coupled with PHP. In our case, MySQL would be used to store user accounts, their encrypted passwords and 2FA keys.</p>
+
+        <h2>GitHub - Code Collaboration</h2>
+        <p>GitHub is a Git hosting service with added features. GitHub provides a graphical user interface for Git utility. It also provides code collaboration tools and support for project documentation, wikis, etc. We are using GitHub to collaborate on our project.</p>
+
+        <h2>PHPStorm - IDE</h2>
+        <p>PHPStorm, just like VSCode, is a popular text-editor and development environment specially made for PHP. It supports error prevention, code analysis and code refactoring. In addition to that, it also supports PHP frameworks such as Laravel, Symphony, CakePHP, etc. We are using PHPStorm to write our source code.</p>
+
+        <br>
+        <br>
+
+        <h2 class="text-center">Request Processing</h2>
+
+        <img src="assets/img/server-setup.png" alt="Server Setup Architecture" class="img-center">
+
+        <br>
+        <br>
+
+        <h2 class="text-center">Password Encryption Algorithm</h2>
+
+        <img src="assets/img/encryption-algo.png" alt="Encryption Algorithm" class="img-center">
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

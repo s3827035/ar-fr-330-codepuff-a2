@@ -183,6 +183,11 @@ p, li {
     font-family: 'Flamenco', serif;
 }
 
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width: 980px) {
 
     nav a {
