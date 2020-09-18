@@ -54,9 +54,13 @@
         <h2>Possible Errors</h2>
 
         <ul>
-            <li>When inputing a new bank card, the user could accidently add too many or too little numbers. The form will notifiy the user asking them to check the card number again.</li>
+            <li>If the user does not enter their details correctly or the confirming second entry does not match the first then the error message to notify the user will occur to check or re-try. </li>
             <li>When the user updates a password, they could forget to update it through passfree. The solution to this is for the web extention to ask the user if it can auto update a password.</li>
-        </ul>
+	    <li>500 Internal Server Error; one of the most common errors on a web page. This usually occurs with web server overload. When you encounter the error message a user would need to reload the webpage, which generally fixes the issue. If this error is constant or repetitive despite superficial solutions, it may be a hosting provider issue. To stay aligned to transparency, if this issue occurs the page will load the error message with this specific error. </li>
+            <li>404 Not Found; this error message occurs when the web page does not exist. There are multiple reasons this may occur; however, it is most commonly due to human error in backend processing. This error can be avoided with thorough testing and strict monitoring of code updates to make sure everything is linked and connected to the server and the other aspects of the page are active. For the user, they will receive the error message. For a user they may refresh the page and see if that fixes the issue, else it would be up to the developers to monitor the running of the web application. </li>
+            <li>408 Request Time-Out; this error occurs when the server does not receive the request entirely from the user in a set timeframe. This is generally a loading issue in which either the user or the server is experiencing a heavy workload or traffic peaks. If this issue persists or occurs then to avoid it on the server end, then the solution or prevention of this is to choose a server that can take multiple requests at once without overloading. The user will see the error message and can refresh their page and that generally will fix the issue. </li>
+            <li>DNS queries are essential to web traffic management so if there is an issue then many issues will occur with the running the web application. It is the basis of many common website errors such as the 404. The best way to prevent this is to have DNS monitoring to identify the issue and to make sure the server is capable of the workload.</li>
+	</ul>
 
         <br>
         <br>
