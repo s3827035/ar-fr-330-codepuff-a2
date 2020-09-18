@@ -45,6 +45,7 @@
         Users may also opt to discontinue using this device and may choose to export all passwords stored into the current device and send it 
         to another.
         </p>
+		
         <p>Password and 2FA exporting will be coded entirely with PHP. Passwords that the user stores are saved as JSON formated files that are stored into PassFree databases
             created via SQL Database. When exporting, PassFree will first compress a JSON file containing all the passwords and 2FA tokens from the application's database. Then, PassFree
             will initialize an exporter to stream the file through the web and transfer the data to the designated device.
@@ -56,6 +57,7 @@
         <br>
 
         <h2>Validation</h2>
+		
         <p>In order to validate the usability of this feature, the user must set up an account at Passfree and then login to their account using their email address and password. 
             After that, they must generate a password for any website requiring login access and then save it in their profile.</p>
         <p>To test this feature, the user should be able to click on the Export button and then be able to download a JSON file containing all their passwords.
@@ -70,6 +72,9 @@
             <li>When user negelcts to enter their Device Security Code, the system would detect and show an error message asking them to check their entered security code</li>
             <li>When user negelcts to enters a Device Security Code that is not connected to their account, the system would show an error message telling the user that they have entered an invalid Security Code.</li>
         </ul>
+		
+		<br>
+		<br>
 
         <h2 class="text-center pb-2">User Story</h2>
 
@@ -77,14 +82,12 @@
 
         <br>
         <br>
-        <div class="grid-2">
-            
-            <div class="">
-                <h2 class="text-center pb-2">Export Password</h2>
-                <img src="assets/img/PasswordExport.png" alt="Password Support" class="w-100">
-            </div>
-
-        </div>
+		            
+		<div class="">
+			<h2 class="text-center pb-2">Export Password</h2>
+			<img src="assets/img/PasswordExport.png" alt="Password Support" class="w-100">
+		</div>
+	
     </div>
 
 </div>
