@@ -71,10 +71,12 @@
             <li>When user attempts to export passwords without entering the Master Key, The system would detect and show an error message asking them to check their entered Master Key again.</li>
             <li>When user negelcts to enter their Device Security Code, the system would detect and show an error message asking them to check their entered security code</li>
             <li>When user negelcts to enters a Device Security Code that is not connected to their account, the system would show an error message telling the user that they have entered an invalid Security Code.</li>
-        </ul>
+            <li>If the hosting server is offline and all the data is stored exclusively on the cloud backup then the user would not be able to export any of their information as there would be an error in communication to the server. To avoid this issue there would need to be local storage which would be considered the "live" storage for the data which can be relied on if the user decides to export and the host is offline. </li>
+	    <li>As all the data is encrypted if there is an issue with the decryption access then the user would not be able to export the passwords and 2fa keys as plaintext or be able to export them at all. To avoid this the encryption and decryption under the master key section will need thorough testing. </li>
+	</ul>
 		
-		<br>
-		<br>
+	<br>
+	<br>
 
         <h2 class="text-center pb-2">User Story</h2>
 
