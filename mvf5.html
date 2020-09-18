@@ -40,28 +40,26 @@
         <h1 class="text-center">Export Password and Two-Factor Authentication Tokens</h1>
 
         <h2>Description</h2>
-        <p>Password and 2FA exporting will be a feature implemented in PassFree to allow users to freely transfer passwords between devices for easier access.
-        Most users will have multiple devices they may switch to or obtain new ones that will require them to input previous passwords again.
-        Users may also opt to discontinue using this device and may choose to export all passwords stored into the current device and send it 
-        to another.
-        </p>
+        <p>Password and 2FA exporting will be a feature implemented in PassFree to allow users to freely access their passwords in plaintext or transfer data between devices.
+        Most users over time will have multiple devices they may switch to or obtain new ones that will require them to input previous passwords again.
+        Users may also opt to discontinue using the device and may choose to export all passwords stored into the current device and send it to another.</p>
 		
-        <p>Password and 2FA exporting will be coded entirely with PHP. Passwords that the user stores are saved as JSON formated files that are stored into PassFree databases
-            created via SQL Database. When exporting, PassFree will first compress a JSON file containing all the passwords and 2FA tokens from the application's database. Then, PassFree
+        <p>Password and 2FA exporting will be coded primarily with PHP. Passwords that the user stores are saved as JSON formated files that are stored into PassFree databases
+            created via SQL Database. When exporting, PassFree will first compress a JSON file containing all the passwords and 2FA tokens from the application database. Then PassFree
             will initialize an exporter to stream the file through the web and transfer the data to the designated device.
             Once recieved, all imported passwords will be unpacked and ready for use in the next device.
-            For the users to access exporting features from PassFree, the application will ask for the Master Key Along with this, a Device Security Code is also connected to each device that the user
-            has PassFree installed. Each device will have a different security code to help the system differentiate each device that they are currently activated on, thus helping
-            the system will also require the user to input the device security code of the device they are trying to export their passwords to.         
+            For the users to access exporting features from PassFree, the application will ask for the Master Key in addition to a device security code. This is also connected to each device that the user
+            has PassFree installed on. Each device will have a different security code to help the system differentiate between that are currently active. 
+	    Lastly the system will also require the user to input the device security code of the device they are trying to export their passwords to.         
         </p>
         <br>
 
         <h2>Validation</h2>
 		
-        <p>In order to validate the usability of this feature, the user must set up an account at Passfree and then login to their account using their email address and password. 
-            After that, they must generate a password for any website requiring login access and then save it in their profile.</p>
-        <p>To test this feature, the user should be able to click on the Export button and then be able to download a JSON file containing all their passwords.
-            Before they can access this, however, they must input their Master Key and Device Security COde.</p>
+        <p>In order to validate the usability of this feature, the user must set up an account with Passfree and then login into their account using their email address and password. 
+            After that they must generate a password for any website requiring login access and save it to their profile.</p>
+        <p>To test this feature, the user should be able to click on the 'Export' button and be able to download a JSON file containing all their passwords.
+            Before they can access this however, they must input their 'MasterKey' and device security code.</p>
         <br>
         <br>
 
